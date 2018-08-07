@@ -1,0 +1,19 @@
+#table_css{
+	 width: 100%;
+	 border-style: solid;
+	 border-collapse: collapse;
+	padding-bottom:30px;
+
+	}
+
+td{
+	text-align: center;
+}
+
+#th_css1{
+	height:60px;
+	font-size: 30px;
+	border-bottom: solid;
+	border-color: gray;
+}
+
