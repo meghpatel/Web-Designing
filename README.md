@@ -1,2 +1,2 @@
-# wdlab
+# Web-Designing
 Web Designing practicals
