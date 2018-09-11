@@ -4,25 +4,39 @@
 	<title>Form</title>
 </head>
 <body>
+<h1>Welcome to Library</h1>
+<h3>Sign Up for Students</h3>
 <form method="POST">
 	<fieldset>
 		<legend>Student Information</legend>
-		Roll No:<input type="text" name="Rno"><br><br>
-		Name: <input type="text" name="Name" placeholder="Enter your name here"> 
-		Parents Name:<input type="text" name="Pname"><br><br>
-		Your Image:<input type="file" name="Image" accept="image/*"><br><br>
-		Gender: Male<input type="radio" name="Gender"> Female<input type="radio" name="Gender"><br><br>
-		Semseter: <select>
+		<label>Roll No:</label>
+		<input type="text" name="Rno"><br><br>
+		<label>Name:</label>
+		<input type="text" name="Name" placeholder="Enter your name here"><br><br>
+		<label>Father's Name:</label>
+		<input type="text" name="Fname"><br><br>
+		<label>Mother's Name:</label>
+		<input type="text" name="Mname"><br><br>
+		<label>Your Image:</label>
+		<input type="file" name="Image" accept="image/*"><br><br>
+		<label>Gender: Male</label>
+		<input type="radio" name="Gender">
+		<label> Female</label>
+		<input type="radio" name="Gender"><br><br>
+		<label>Semseter:</label>
+		<select>
 			<option>1</option>
 			<option>2</option>
 			<option>3</option>
 			<option>4</option>
 		</select> <br><br>
-		Address:<br>
+		<label>Address:</label><br>
 		<textarea placeholder="Enter Address here" rows="10" cols="50"></textarea><br><br>
-		Age:
-		<input type="range" min="18" max="60" name="">
+		<label>CGPA:</label>
+		<input type="range" name="cgpa" min="1" max="10" step="0.01">
+		<input type="submit" name="submit">
 	</fieldset>
+
 </form>
 </body>
 </html>
