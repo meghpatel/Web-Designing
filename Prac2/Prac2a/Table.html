@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table Example</title>
+	<style type="text/css">
+		#Tab{
+			border-width: 3px;
+			border-style: solid;
+			border-color: black;
+		}
+		#rmv
+		{
+			border: none;
+		}
+	</style>
+</head>
+<body>
+<table border="1" id="Tab">
+	<caption>Table Example</caption>
+	<tr>
+		<th colspan="3">Header-1</th>
+		<th rowspan="2" colspan="2">Right Corner of the Table</th>
+	</tr>
+	<tr>
+		<th colspan="2">Header-2</th>
+		<th>Header-3</th>
+	</tr>
+	<tr>
+		<td>
+			<ol>
+				<li>1.List can be table data</li>
+				<li>2.Images can be table data</li>
+			</ol>
+		</td>
+		<td rowspan="2">Two Tall</td>
+		<td colspan="2">Two columns merged</td>
+		<td id="rmv"></td>
+	</tr>
+	<tr>
+		<td><img src="planets.jpg" width="266" height="187"></td>
+		<td>Data Here</td>
+		<td>
+			<table border="1">
+				<caption>Caption:Nested Table</caption>
+				<tr><th>Heading</th></tr>
+				<tr><td>cell</td></tr>
+			</table>
+		</td>
+		<td>
+			<p><b>Multiple Lines:</b>
+			</p><br>
+			<p>Line 1</p><br>
+			<p>Line 2</p><br>
+		</td>
+	</tr>
+	<tfoot>
+		<th colspan="5">Table Footer</th>
+	</tfoot>
+</table>
+</body>
+</html>

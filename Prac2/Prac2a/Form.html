@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+
+	</style>
+</head>
+<body>
+<h1>Welcome to Library</h1>
+<h3>Sign Up for Students</h3>
+<form method="POST" action="login.html">
+	<fieldset>
+		<legend>Student Information</legend>
+		<label>Roll No:</label>
+		<input type="text" name="Rno" autofocus required><br><br>
+		<label>Name:</label>
+		<input type="text" name="Name" placeholder="Enter your name here" required><br><br>
+		<label>Father's Name:</label>
+		<input type="text" name="Fname"><br><br>
+		<label>Mother's Name:</label>
+		<input type="text" name="Mname"><br><br>
+		<label>Your Image:</label>
+		<input type="file" name="Image" accept="image/*"><br><br>
+		<label>Gender: Male</label>
+		<input type="radio" name="Gender">
+		<label> Female</label>
+		<input type="radio" name="Gender"><br><br>
+		<label>Semseter:</label>
+		<select>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+		</select> <br><br>
+		<label>Address:</label><br>
+		<textarea placeholder="Enter Address here" rows="10" cols="50"></textarea><br><br>
+		<label>CGPA:</label>
+		<input type="range" name="cgpa" min="1" max="10" step="0.01"><br><br>
+		<label>Birthday</label>
+		<input type="date" name="bday"><br><br>
+	</fieldset><br><br>
+
+	<fieldset>
+		<legend>Student's Interest</legend>
+		<label>Favourite Category</label>
+		<input list="cat">
+		<datalist id="cat">
+		  <option value="Thriller">
+		  <option value="Fiction">
+		  <option value="Non-Fiction">
+		  <option value="Romance">
+		  <option value="Comic">
+		</datalist> <br><br>
+		<label>Favourite Author:</label><br>
+		<label>Dan Brown</label>
+		<input type="checkbox" name="Author" value="Dan Brown"><br>
+		<label>Agatha Cristie</label>
+		<input type="checkbox" name="Author" value="Agatha Cristie"><br>
+		<label>PG Wodehouse</label>
+		<input type="checkbox" name="Author" value="PG Wodehouse"><br>
+		<label>Other:</label>
+		<input type="checkbox" name="Author" value="Other">
+		<label>Please Specify</label><input type="Text" name="OT"><br><br>
+		<label>Choose a subscription Plan:</label><br>
+		<label>Rs.100 per month</label><input type="radio" name="Sub">
+		<label>Rs.500 for 6 months</label><input type="radio" name="Sub">
+		<label>Rs.800 for 12 months</label><input type="radio" name="Sub">
+	</fieldset>
+
+	<br><br><input type="Submit" name="Submit"><br><br>
+	<input type="Reset" name="Reset">
+
+</form>
+</body>
+</html>
