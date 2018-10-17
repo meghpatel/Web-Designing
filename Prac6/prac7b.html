@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>first letter declarations</title>
+</head>
+<style>
+body{
+	counter-reset: cnt;
+}
+h3::after{
+	counter-increment: cnt;
+	content: counter(cnt) ".";
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.a::first-letter{
+	font-size: 200%;
+	color: black;
+}
+</style>
+<body>
+<h3 class="a">This is paragraph </h3>
+<p>xyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+<h3>This is paragraph </h3>
+<p>xyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+<h3 class="a">This is paragraph </h3>
+<p>xyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
+<h3>Paragraph </h3>
+<a href="https://www.google.com">Google</a>
+</body>
+</html>
