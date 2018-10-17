@@ -9,13 +9,15 @@
 <body>
 <h1>Welcome to Library</h1>
 <h3>Sign Up for Students</h3>
-<form method="POST" action="login.html">
+<form method="POST" action="login.html" enctype="multipart/form-data">
 	<fieldset>
 		<legend>Student Information</legend>
 		<label>Roll No:</label>
 		<input type="text" name="Rno" autofocus required><br><br>
 		<label>Name:</label>
-		<input type="text" name="Name" placeholder="Enter your name here" required><br><br>
+		<input type="text" name="Name" placeholder="Enter your name here" required ><br><br>
+		<label>Choose a Password</label>
+		<input type="Password" name="Password" pattern="[.]{8}"><br><br>
 		<label>Father's Name:</label>
 		<input type="text" name="Fname"><br><br>
 		<label>Mother's Name:</label>
