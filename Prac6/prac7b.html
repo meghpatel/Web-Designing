@@ -6,7 +6,7 @@
 body{
 	counter-reset: cnt;
 }
-h3::after{
+h3::before{
 	counter-increment: cnt;
 	content: counter(cnt) ".";
 }
@@ -14,19 +14,19 @@ a{
 	text-decoration: none;
 	color: black;
 }
-.a::first-letter{
+.let::first-letter{
 	font-size: 200%;
 	color: black;
 }
 </style>
 <body>
-<h3 class="a">This is paragraph </h3>
-<p>xyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
-<h3>This is paragraph </h3>
-<p>xyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
-<h3 class="a">This is paragraph </h3>
-<p>xyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz</p>
-<h3>Paragraph </h3>
-<a href="https://www.google.com">Google</a>
+<h3 class="let">What is HTML?</h3>
+<p>HTML stands for Hyper Text Markup Language. HTML is used to create webpages.</p>
+<h3>CSS</h3>
+<p>CSS stands for Cascaded Style Sheets. CSS is used to make webpages more attractive.</p>
+<h3 class="let">What is JavaScript?</h3>
+<p>JavaScript is a scripting language created by Netscape. JavaScript makes a webpage more responsive.</p>
+<h3>Where to learn them?</h3>
+<a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
 </body>
 </html>
